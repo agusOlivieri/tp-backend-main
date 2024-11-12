@@ -18,6 +18,10 @@ public class GWConfig {
                         .path("/pruebas/finalizar")
                         .uri("http://localhost:8082")
                 )
+                .route(p -> p
+                        .path("/vehiculos/posicion")
+                        .uri("http://localhost:8083")
+                )
                 .build();
     }
 }
