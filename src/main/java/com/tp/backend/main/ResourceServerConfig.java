@@ -28,7 +28,7 @@ public class ResourceServerConfig {
                 .pathMatchers("/")
                 .permitAll()
 
-                .pathMatchers("/pruebas")
+                .pathMatchers("/pruebas/**")
                 .hasRole("EMPLEADO")
 
                 .pathMatchers("/vehiculos/**")
