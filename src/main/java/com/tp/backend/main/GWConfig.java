@@ -22,6 +22,19 @@ public class GWConfig {
                         .path("/vehiculos/posicion")
                         .uri("http://localhost:8083")
                 )
+                .route(p -> p
+                        .path("/reportes/incidentes")
+                        .uri("http://localhost:8082")
+                )
+                .route(p -> p
+                        .path("/reportes/incidentes/empleado")
+                        .uri("http://localhost:8082")
+                )
+                .route(p -> p
+                        .path("/reportes/pruebas/vehiculo")
+                        .uri("http://localhost:8082")
+                )
+
                 .build();
     }
 }

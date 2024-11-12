@@ -34,7 +34,7 @@ public class ResourceServerConfig {
                 .pathMatchers("/vehiculos/**")
                 .hasRole("USUARIO_VEHICULO")
 
-                .pathMatchers("/admin/**")
+                .pathMatchers("/reportes/**")
                 .hasRole("ADMIN")
 
                 .anyExchange()
